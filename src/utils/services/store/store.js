@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-
+import  employee  from "../reducer/employee";
 
 /**
 * the store, 
@@ -9,6 +9,6 @@ import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({
   reducer: {
-   
+    employee: employee
   },
 });
