@@ -6,7 +6,7 @@ import states from '../datas/states.js'
 const Form = () => {
   const dispatch = useDispatch();
   const {firstName, lastName, dateOfBirth, startDate,state, street, city, zipCode, department} = useSelector((status) => status.employee);
-  console.log(firstName, lastName, dateOfBirth, startDate,state, street, city, zipCode, department)
+  
   return (
    
     <form id="create-employee">

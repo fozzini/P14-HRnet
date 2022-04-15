@@ -65,6 +65,6 @@ const { actions, reducer } = createSlice({
     },
   },
 });
-
-export { actions }
+export {actions};
+export const {firstName, lastName, dateOfBirth, startDate,state, street, city, zipCode, department} = actions;
 export default reducer;

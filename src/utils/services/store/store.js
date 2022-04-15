@@ -1,5 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
+import { rrtableReducer } from "react-redux-table";
 import  employee  from "../reducer/employee";
+import  employeesList  from "../reducer/employees";
 
 /**
 * the store, 
@@ -9,6 +11,8 @@ import  employee  from "../reducer/employee";
 
 export const store = configureStore({
   reducer: {
-    employee: employee
+    employee: employee,
+    employeesList: employeesList,
+    rrtable: rrtableReducer,
   },
 });
