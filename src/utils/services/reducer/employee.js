@@ -15,7 +15,8 @@ const initialState = {
  street:"",
  city:"",
  state:"AL",
- zipCode:""
+ zipCode:"",
+ openModal:"false"
 };
 
 const { actions, reducer } = createSlice({
