@@ -32,5 +32,4 @@ const EmployeesTable = () => {
   );
 }
 
-
 export default EmployeesTable;

@@ -15,19 +15,15 @@ const initialState = {
  street:"",
  city:"",
  state:"AL",
- zipCode:"",
- openModal:"false"
+ zipCode:""
 };
 
 const { actions, reducer } = createSlice({
   name: "employee",
   initialState,
   reducers: {
-    reinit: {
-      reducer: () => {
-        return initialState;
-      },
-    },
+    reset: () => initialState,
+    
     firstName: {
       prepare: (firstName ) => ({ payload: { firstName } }),
       reducer: (draft, action) => { draft.firstName=action.payload.firstName}
@@ -66,6 +62,7 @@ const { actions, reducer } = createSlice({
     },
   },
 });
+
 export {actions};
 export const {firstName, lastName, dateOfBirth, startDate,state, street, city, zipCode, department} = actions;
 export default reducer;

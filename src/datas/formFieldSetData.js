@@ -1,7 +1,7 @@
-const states = [
+export const states = [
   {
       "name": "Alabama",
-      "abbreviation": "AL"
+      "abbreviation": "AL",
   },
   {
       "name": "Alaska",
@@ -236,5 +236,20 @@ const states = [
       "abbreviation": "WY"
   }
 ];
-
-export default states;
+export const departments = [
+    {
+        "name": "Sales",
+    },
+    {
+        "name": "Marketing",
+    },
+    {
+        "name": "Engineering",
+    },
+    {
+        "name": "Human Resources",
+    },
+    {
+        "name": "Legal",
+    },
+];
