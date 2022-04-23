@@ -1,34 +1,33 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { Table } from "react-redux-table";
-
-const headArray = [
-  { title: "First Name", category: "firstName" },
-  { title: "Last Name", category: "lastName" },
-  { title: "Start Date", category: "startDate" },
-  { title: "Department", category: "department" },
-  { title: "Date Of Birth", category: "dateOfBirth" },
-  { title: "Street", category:"street"},
-  { title: "City", category:"city"},
-  { title: "State", category:"state"},
-  { title: "Zip Code", category:"zipCode"},
-];
+import React from "react";
+import { ThemeProvider, createTheme } from '@mui/material';
+import MaterialTable from "material-table";
+import { useSelector } from "react-redux";
 
 const EmployeesTable = () => {
-  const rowsArray = useSelector(state => state.employeesList);
+  const defaultMaterialTheme = createTheme();
+  const rows = useSelector(state => state.employeesList);
+  const editable = rows.map(o => ({ ...o }));
 
-  return (
-    <>
-      <Table
-        headersArray={headArray}
-        rowsContent={rowsArray}
-        title=""
-        filter={true}
-        entriesSelector={[10, 100]}
-        showEntries={true}
-        hideButtons={false}
-      />
-    </>
+  return(
+    <div style={{ width: '100%', height: '100%' }}>
+        <ThemeProvider theme={defaultMaterialTheme}>
+            <MaterialTable
+              columns={[
+              { title: "First Name", field: "firstName" },
+              { title: "Last Name", field: "lastName" },
+              { title: "Start Date", field: "startDate"},
+              { title: "Department", field: "department" },
+              { title: "Date Of Birth", field: "dateOfBirth"},
+              { title: "Street", field:"street"},
+              { title: "City", field:"city"},
+              { title: "State", field:"state"},
+              { title: "Zip Code", field:"zipCode"}
+              ]}
+              data={editable}
+              title="Current Employees"
+            />
+        </ThemeProvider>
+    </div>
   );
 }
 

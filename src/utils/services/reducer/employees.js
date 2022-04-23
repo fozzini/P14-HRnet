@@ -5,17 +5,17 @@ const { actions, reducer } = createSlice({
   initialState : [],
   reducers: {
     addEmployee: {
-      prepare: (body) => ( {payload:  [
-        {cellValue:body.firstName,category:"firstName"},
-        {cellValue:body.lastName,category:"lastName"},
-        {cellValue:body.startDate,category:"startDate"},
-        {cellValue:body.department,category:"department"},
-        {cellValue:body.dateOfBirth,category:"dateOfBirth"},
-        {cellValue:body.street,category:"street"},
-        {cellValue:body.city,category:"city"},
-        {cellValue:body.state,category:"state"},
-        {cellValue:body.zipCode,category:"zipCode"},
-      ],}),
+      prepare: (body) => ( {payload:  
+        {firstName:body.firstName,
+        lastName:body.lastName,
+        startDate:body.startDate,
+        department:body.department,
+        dateOfBirth:body.dateOfBirth,
+        street:body.street,
+        city:body.city,
+        state:body.state,
+        zipCode:body.zipCode}
+      }),
       reducer: (draft, action) => { draft.push(action.payload)}
     },
   },
