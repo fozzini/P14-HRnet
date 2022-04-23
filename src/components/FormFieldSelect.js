@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector} from 'react-redux';
 
-function FormFieldSet({array, name, id, action}) {
+function FormFieldSelect({array, name, id, action}) {
     const dispatch = useDispatch();
     const value = useSelector((status) => status.employee)
     return (
@@ -25,4 +25,4 @@ function FormFieldSet({array, name, id, action}) {
     )
 }
 
-export default FormFieldSet
+export default FormFieldSelect

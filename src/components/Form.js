@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch} from "react-redux";
-import { states, departments } from "../datas/formFieldSetData.js";
+import { states, departments } from "../datas/formFieldSelectData";
 import { pushEmployee } from "../utils/services/reducer/employees";
 import { actions} from "../utils/services/reducer/employee";
 import Modal from "./Modal";
@@ -11,7 +11,7 @@ import {
   employeeZipCode,
 } from "../datas/formFieldData";
 import FormField from "./FormField";
-import FormFieldSet from "./FormFieldSet";
+import FormFieldSelect from "./FormFieldSelect";
 const Form = () => {
   const dispatch = useDispatch();
   const { handleSubmit } = useForm();
@@ -29,7 +29,7 @@ const Form = () => {
         <fieldset className="address">
           <legend>Address</legend>
           <FormField array={employeeAdress} />
-          <FormFieldSet
+          <FormFieldSelect
             array={states}
             name="State"
             id="state"
@@ -37,7 +37,7 @@ const Form = () => {
           />
           <FormField array={employeeZipCode} />
         </fieldset>
-        <FormFieldSet
+        <FormFieldSelect
           array={departments}
           name="Department"
           id="department"
