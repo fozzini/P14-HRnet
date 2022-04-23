@@ -15,7 +15,7 @@ html {
 }
 
 *, *:before, *:after {
-  font-size: inherit;
+ 
   box-sizing: inherit;
 }
 
@@ -23,4 +23,8 @@ html {
 img{ 
   max-width: 100%;
 }
+.root{
+  height:100%;
+}
 
+ 

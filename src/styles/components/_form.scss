@@ -1,4 +1,32 @@
 .formitem{
   display:flex;
   flex-direction:column;
+  background-color:rgb(204, 201, 170);
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.submit{
+  margin-top: 10%;
+  padding: 10px 30px;
+}
+input{
+  border-style: hidden;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-align:center;
+}
+input:focus, textarea:focus, select:focus{
+  outline:1px solid burlywood;
+}
+select{
+  border-style: hidden;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-align:center;
 }

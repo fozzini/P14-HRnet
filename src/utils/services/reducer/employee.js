@@ -15,7 +15,8 @@ const initialState = {
  street:"",
  city:"",
  state:"AL",
- zipCode:""
+ zipCode:"",
+ isHome:true,
 };
 
 const { actions, reducer } = createSlice({
@@ -23,7 +24,11 @@ const { actions, reducer } = createSlice({
   initialState,
   reducers: {
     reset: () => initialState,
-    
+    isHome: {
+      reducer: (draft) => {
+        draft.isHome = !draft.isHome;
+      },
+    },
     firstName: {
       prepare: (firstName ) => ({ payload: { firstName } }),
       reducer: (draft, action) => { draft.firstName=action.payload.firstName}
@@ -64,5 +69,5 @@ const { actions, reducer } = createSlice({
 });
 
 export {actions};
-export const {firstName, lastName, dateOfBirth, startDate,state, street, city, zipCode, department} = actions;
+export const {firstName, lastName, dateOfBirth, startDate,state, street, city, zipCode, department, isHome} = actions;
 export default reducer;

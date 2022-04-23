@@ -23,11 +23,12 @@ const Form = () => {
   };
 
   return (
-    <div>
+    <div className="formitem">
+      <h2>Create Employee</h2>
       <form className="formitem" onSubmit={handleSubmit(onSubmit)}>
         <FormField array={employeeInfos}/>
         <fieldset className="address">
-          <legend>Address</legend>
+          <legend className="legend">Address</legend>
           <FormField array={employeeAdress} />
           <FormFieldSelect
             array={states}
@@ -43,7 +44,7 @@ const Form = () => {
           id="department"
           action={actions.department}
         />
-        <input type="submit" value="Apply"/>
+        <input type="submit" value="Apply" className="submit"/>
       </form>
       {openModal && (
         <Modal closeModal={() => setOpenModal(false)}>
