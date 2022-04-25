@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import EmployeesTable from '../components/EmployeesTable';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
