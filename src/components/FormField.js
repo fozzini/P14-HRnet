@@ -2,7 +2,13 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import { actions } from "../utils/services/reducer/employee";
-
+/**
+* create form fields
+*
+* @param Hooks - 
+* @return reducer function, register the input, the state .
+* @return html - form field
+*/
 function FormField({ array }) {
   const dispatch = useDispatch();
   const { register } = useForm({ shouldUseNativeValidation: true });

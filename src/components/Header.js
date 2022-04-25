@@ -4,9 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { actions } from '../utils/services/reducer/employee';
 /**
-* create nav header panel
-*
-* @return html - Header panel
+* create nav header
+* @return html - Header
 */
 const Header = () => {
   

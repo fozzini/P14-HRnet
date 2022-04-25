@@ -3,7 +3,11 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import MaterialTable from "material-table";
 import { useSelector } from "react-redux";
 import { columns } from "../datas/materialTableData";
-
+/**
+* create Table
+*
+* @return html - Table
+*/
 const EmployeesTable = () => {
   const defaultMaterialTheme = createTheme();
   const rows = useSelector(state => state.employeesList);

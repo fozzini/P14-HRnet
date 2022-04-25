@@ -1,3 +1,8 @@
+/**
+* create datas table array header and content
+*
+* @return datas
+*/
 export const columnItems = [
     { title: "First Name", field: "firstName"},
     { title: "First Name", field: "firstName"},

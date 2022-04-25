@@ -1,6 +1,12 @@
 import React from 'react'
 import { useDispatch, useSelector} from 'react-redux';
-
+/**
+* create form field select
+*
+* @param Hooks - 
+* @return reducer function, the state .
+* @return html - form field select
+*/
 function FormFieldSelect({array, name, id, action}) {
     const dispatch = useDispatch();
     const value = useSelector((status) => status.employee)

@@ -1,5 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+/**
+* The Table reducer
+*
+* @return table state 
+*/
 const { actions, reducer } = createSlice({
   name: "employeesList",
   initialState : [],

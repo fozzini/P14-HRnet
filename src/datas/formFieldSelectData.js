@@ -1,3 +1,8 @@
+/**
+* create datas form select array
+*
+* @return datas
+*/
 export const states = [
   {
       "name": "Alabama",

@@ -1,5 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+/**
+* create page error
+*
+* @return html - page error
+*/
 const Error = () => {
   return (
     <div>

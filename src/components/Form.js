@@ -12,6 +12,14 @@ import {
 } from "../datas/formFieldData";
 import FormField from "./FormField";
 import FormFieldSelect from "./FormFieldSelect";
+/**
+* create form
+*
+* @param Hooks - 
+* @return reducer function, handleSubmit, modal .
+* @param onSubmit - functions to register form input and to launch modal.
+* @return html - form
+*/
 const Form = () => {
   const dispatch = useDispatch();
   const { handleSubmit } = useForm();

@@ -1,3 +1,8 @@
+/**
+* create datas form array
+*
+* @return datas
+*/
 export const employeeInfos = [
     {
       'label': "First Name",
