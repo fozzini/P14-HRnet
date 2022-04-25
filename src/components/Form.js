@@ -4,7 +4,7 @@ import { useDispatch} from "react-redux";
 import { states, departments } from "../datas/formFieldSelectData";
 import { pushEmployee } from "../utils/services/reducer/employees";
 import { actions} from "../utils/services/reducer/employee";
-import Modal from "./Modal";
+import Modal from "modal-component-p14/dist/Modal";
 import {
   employeeAdress,
   employeeInfos,

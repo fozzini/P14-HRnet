@@ -21,7 +21,13 @@ const Header = () => {
             <h1>HRnet</h1>
         </div>
         <div>
-            <Button>{isHome ? toEmployeeList : toHome}</Button>
+            <Button>{
+            isHome
+            ? 
+            toEmployeeList 
+            : 
+            toHome
+            }</Button>
         </div> 
     </div>
   );
