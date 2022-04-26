@@ -22,3 +22,12 @@
         font-size: xx-large;
     }
 }
+
+.button {
+    background-color:$color-1;
+    border:none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color:darken($color-1, $amount: 15%);
+}

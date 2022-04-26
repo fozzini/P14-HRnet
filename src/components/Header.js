@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core';
+
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -20,13 +20,13 @@ const Header = () => {
             <h1>HRnet</h1>
         </div>
         <div>
-            <Button>{
+            <button className="button">{
             isHome
             ? 
             toEmployeeList 
             : 
             toHome
-            }</Button>
+            }</button>
         </div> 
     </div>
   );
