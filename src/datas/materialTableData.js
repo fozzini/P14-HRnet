@@ -5,7 +5,6 @@
 */
 export const columnItems = [
     { title: "First Name", field: "firstName"},
-    { title: "First Name", field: "firstName"},
     { title: "Last Name", field: "lastName"},
     { title: "Start Date", field: "startDate"},
     { title: "Department", field: "department" },

@@ -12,11 +12,14 @@
 .submit{
   margin-top: 10%;
   padding: 10px 30px;
+  background-Color: darken($color-1, 15%)
+  
 }
 input{
   border-style: hidden;
   outline: none;
   border-radius: 5px;
+  width:20vw;
   padding: 10px;
   text-align:center;
 }
@@ -25,6 +28,7 @@ input:focus, textarea:focus, select:focus{
 }
 select{
   border-style: hidden;
+  width:20vw;
   outline: none;
   border-radius: 5px;
   padding: 10px;
