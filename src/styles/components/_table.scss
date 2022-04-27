@@ -1,25 +1,17 @@
-td.MuiTableCell-root{font-size:medium;}
+
 .table{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
     width: 100%;
-    min-height: 100%;
-    margin-bottom: -50px;
-    h6{
-        font-size: large;
-    }
-    span{font-size:x-large;
-    }
-    th{
-        span{font-size:small;}
-    }
-    td{
-        font-size:medium;
-    }
-    tr{
-        td{font-size:small;}
-    }
-    p{
-        font-size: medium;
-    }
-    
+    min-height: 100%;  
 }
+#employee-div{
+    justify-content: flex-start;
+}
+.listTitle {
+    font-size:medium;
+}
+
 

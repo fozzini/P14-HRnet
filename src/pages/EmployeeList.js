@@ -1,7 +1,8 @@
 import React from 'react';
-import EmployeesTable from '../components/EmployeesTable';
+// import EmployeesTable from '../components/EmployeesTable';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import TableEmployee from '../components/TableEmployee';
 /**
 * create page employee list
 *
@@ -12,11 +13,13 @@ const EmployeeList = () => {
     <div>
       <Header/>
       <div id="employee-div" className="container">
-        <EmployeesTable/>
+        <TableEmployee/>
       </div>
       <Footer/>
     </div>
   );
 };
+
+
 
 export default EmployeeList;

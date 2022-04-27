@@ -11,12 +11,12 @@ const Header = () => {
   
   const {isHome} = useSelector((status) => status.employee)
   const dispatch = useDispatch()
-  const toEmployeeList = <Link to={`/employee-list`} onClick= {() => dispatch(actions.isHome())} ><p>View Current Employees</p></Link>
-  const toHome = <Link to={`/`} onClick= {() => dispatch(actions.isHome())}><p>Home</p></Link>
+  const toEmployeeList = <Link to={`/employee-list`} onClick= {() => dispatch(actions.isHome())}  aria-label="employeeList" ><p>View Current Employees</p></Link>
+  const toHome = <Link to={`/`} onClick= {() => dispatch(actions.isHome())}  aria-label="home"><p>Home</p></Link>
 
   return (
     <div className="header">
-        <div className="title">
+        <div className="title" role="region">
             <h1>HRnet</h1>
         </div>
         <div>

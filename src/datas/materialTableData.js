@@ -4,30 +4,27 @@
 * @return datas
 */
 export const columnItems = [
-    { title: "First Name", field: "firstName"},
-    { title: "Last Name", field: "lastName"},
-    { title: "Start Date", field: "startDate"},
-    { title: "Department", field: "department" },
-    { title: "Date Of Birth", field: "dateOfBirth"}, 
-    { title: "Street", field:"street"},
-    { title: "City", field:"city"},
-    { title: "State", field:"state"},
-    { title: "Zip Code", field:"zipCode"},
+    { header: "First Name", dataField: "firstName", isSortable: true,},
+    { header: "Last Name", dataField: "lastName", isSortable: true,},
+    { header: "Start Date", dataField: "startDate", isSortable: true,},
+    { header: "Department", dataField: "department", isSortable: true, },
+    { header: "Date Of Birth", dataField: "dateOfBirth", isSortable: true,}, 
+    { header: "Street", dataField:"street", isSortable: true,},
+    { header: "City", dataField:"city", isSortable: true,},
+    { header: "State", dataField:"state", isSortable: true,},
+    { header: "Zip Code", dataField:"zipCode", isSortable: true,},
 ]
 
-export const columns =
-columnItems.map( col => { 
-    const container = {};
-        container.title = col.title;
-        container.field = col.field;
-        container.cellStyle =  {
-            color: '#000',
-            fontSize:'small'
-        };
-        container.headerStyle = {
-            backgroundColor: 'rgb(204, 201, 170)',
-            fontWeight: 'bolder',
-            color:'#fff'
-        };
-    return container;
-})
+
+const id = document.getElementsByClassName("iqBCQs")
+
+for (let index = 0; index < id.length; index++) {
+    const element = id[index];
+    const keys = Object.keys(element);
+    const key = keys[1]
+    const object = element[key]
+    delete element.key
+    element.removeAttribute("aria-description")
+    console.log(object)
+}
+  
