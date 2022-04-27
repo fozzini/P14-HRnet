@@ -4,18 +4,18 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
-    "@codbear/reactable": "^1.0.3",
     "@reduxjs/toolkit": "^1.8.0",
     "cross-env": "^7.0.3",
     "modal-component-p14": "^0.1.7",
     "node-sass": "^7.0.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-hook-form": "^7.29.0",
     "react-redux": "^7.2.6",
     "react-router": "^6.2.2",
     "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "table-plugin": "^0.1.2"
   },
   "scripts": {
     "predeploy": "npm run build",
