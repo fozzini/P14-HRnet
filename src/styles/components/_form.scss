@@ -1,0 +1,49 @@
+.formitem{
+  display:flex;
+  flex-direction:column;
+  background-color:$color-1;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.submit{
+  margin-top: 10%;
+  padding: 10px 30px;
+  background-Color: darken($color-1, 15%);
+  color:white;
+}
+input{
+  border-style: hidden;
+  outline: none;
+  border-radius: 5px;
+  width:20vw;
+  padding: 10px;
+  text-align:center;
+}
+input:focus, textarea:focus, select:focus{
+  outline:1px solid burlywood;
+}
+select{
+  border-style: hidden;
+  width:20vw;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-align:center;
+}
+
+.icon{
+  color: #000000;
+  padding : 10px;
+  cursor: pointer;
+  background-Color: transparent;
+  border: 0px;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  width:5vh;
+}
+

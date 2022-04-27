@@ -1,0 +1,17 @@
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;  
+}
+#employee-div{
+    justify-content: flex-start;
+}
+.listTitle {
+    font-size:medium;
+}
+
+

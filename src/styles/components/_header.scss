@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color:$color-1;
+    height : 150px;
+    width : 100%;
+    align-items: center;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        p{
+            font-size:small;
+            color:white;
+        }
+    }
+}
+
+.title {
+    display: flex;
+    h1{
+        color:white;
+        font-size: xx-large;
+    }
+}
+
+.button {
+    background-color:$color-1;
+    border:none;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color:darken($color-1, $amount: 15%);
+}
