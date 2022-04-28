@@ -3,7 +3,6 @@ import { Table } from '@codbear/reactable';
 import { columnItems } from '../datas/materialTableData';
 import { useSelector } from 'react-redux';
 
-
 const TableEmployee = () => {
   const rows = useSelector(state => state.employeesList);
   const editable = rows.map(o => ({ ...o }));
