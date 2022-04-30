@@ -3,10 +3,12 @@
   "name": "HRnet",
   "version": "0.1.0",
   "private": false,
+  "author": "Foezon Florian",
+  "description": "react app",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "cross-env": "^7.0.3",
-    "modal-component-p14": "^0.1.7",
+    "modal-component-p14": "^0.1.8",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

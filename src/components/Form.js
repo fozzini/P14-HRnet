@@ -24,6 +24,7 @@ const Form = () => {
   const dispatch = useDispatch();
   const { handleSubmit } = useForm();
   const [openModal, setOpenModal] = useState(false);
+  const str = "Employee Created!"
   const onSubmit = () => {
     dispatch(pushEmployee());
     setOpenModal(true);
@@ -55,9 +56,7 @@ const Form = () => {
         <input type="submit" value="Apply" className="submit"/>
       </form>
       {openModal && (
-        <Modal closeModal={() => setOpenModal(false)}>
-          <p>Employee Created!</p>
-        </Modal>
+        <Modal str={str} closeModal={() => setOpenModal(false)}></Modal>
       )}
     </div>
   );
