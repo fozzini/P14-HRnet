@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 /**
 * The Table reducer
-*
+* reducer for the table
+* @param pushEmployee - create the employees values.
 * @return table state 
 */
 const { actions, reducer } = createSlice({

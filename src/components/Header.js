@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { actions } from '../utils/services/reducer/employee';
 /**
 * create nav header
+* @param isHome - hooks to get the state.
+* @param toEmployeeList & toHome - button to redirect to the selected page used with a ternary function .
 * @return html - Header
 */
 const Header = () => {

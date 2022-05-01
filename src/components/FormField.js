@@ -7,6 +7,9 @@ import { actions } from "../utils/services/reducer/employee";
 *
 * @param Hooks - 
 * @return reducer function, register the input, the state .
+* @param register - hooks to register the form input.
+* @param array - array of input stored in data.
+* @param value - hooks to get the state of the input value.
 * @return html - form field
 */
 function FormField({ array }) {

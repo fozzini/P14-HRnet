@@ -5,7 +5,8 @@ import { useSelector } from 'react-redux';
 import TableEmployee from 'table-plugin/dist/TableEmployee';
 /**
 * create page employee list
-*
+* @param rows - get the row state to send to the table
+* @param editable - create row object.
 * @return html - page employee list
 */
 const EmployeeList = () => {

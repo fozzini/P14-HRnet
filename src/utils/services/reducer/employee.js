@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 /**
 * The "main" reducer
-*
+* reducer for the input fields
 * @return state
 */
 

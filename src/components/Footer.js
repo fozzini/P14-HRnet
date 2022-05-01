@@ -1,9 +1,9 @@
 import React from 'react';
 
 /**
-* create footer
+* create footer component
 *
-* @return html - footer
+* @return html - footer component
 */
 const Footer = () => {
   return (

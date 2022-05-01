@@ -18,6 +18,8 @@ import FormFieldSelect from "./FormFieldSelect";
 * @param Hooks - 
 * @return reducer function, handleSubmit, modal .
 * @param onSubmit - functions to register form input and to launch modal.
+* @param str - string to send a custom message to the modal.
+* @param openModal - hooks to manage the state of the modal.
 * @return html - form
 */
 const Form = () => {
